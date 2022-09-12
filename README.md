@@ -12,7 +12,7 @@
 	* exemplo: sh -i .vagrant/machines/default/virtualbox/private_key vagrant@192.168.1.15
 8. Gerar chave SSH: ssh-keygen -t rsa
 9. Para adicionar a chave na maquina do vagrant:
-	I. vagrant ssh # para entrar na maquina
-	II. cp /vagrant/sua_chave_publica . # copia para  pasta de usuario da maquina do vagrant a chave publica a ser adicionada
-	III. cat sua_chave_publica >> ~/.ssh/authorized_keys
-	IV. fazer o passo 7 para testar a conexao
+	- vagrant ssh # para entrar na maquina
+	- cp /vagrant/sua_chave_publica . # copia para  pasta de usuario da maquina do vagrant a chave publica a ser adicionada
+	- cat sua_chave_publica >> ~/.ssh/authorized_keys
+	- fazer o passo 7 para testar a conexao
