@@ -1,3 +1,4 @@
 .vagrant/
 bionic/.vagrant/
 *.log
+bionic/.ssh
