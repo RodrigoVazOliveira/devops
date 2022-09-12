@@ -1,2 +1,3 @@
 .vagrant/
 bionic/.vagrant/
+*.log
