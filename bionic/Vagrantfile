@@ -42,5 +42,7 @@ Vagrant.configure("2") do |config|
         inline: "cp /vagrant/config/id_bionic  /home/vagrant && \
                 chmod 600 /home/vagrant/id_bionic && \
                 chown vagrant:vagrant /home/vagrant/id_bionic"
+	 ansible.vm.provision "shell",
+        inline: "ansible-playbook -i /vagrant/config/ansible/hosts /vagrant/config/ansible/playbook.yml"
   end
  end

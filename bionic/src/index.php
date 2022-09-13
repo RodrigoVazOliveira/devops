@@ -2,7 +2,7 @@
 
 echo 'Testando a conexao com o banco de dados! <br />';
 
-$host = '192.168.1.15';
+$host = '192.168.1.18';
 $username = 'phpuser';
 $password = 'pass';
 $configConnection = "mysql:host={$host};";
