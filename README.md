@@ -16,3 +16,11 @@
 	- cp /vagrant/sua_chave_publica . # copia para  pasta de usuario da maquina do vagrant a chave publica a ser adicionada
 	- cat sua_chave_publica >> ~/.ssh/authorized_keys
 	- fazer o passo 7 para testar a conexao
+10. Para validar o Vagrantfile use: vagrant validate
+
+
+
+## Observacoes:
+
+1. O puppet e necessario instalar na maquina virtual para usar os scripts.
+2. O Ansible e necessario ser instalado apenas na sua maquina
