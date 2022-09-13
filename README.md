@@ -18,6 +18,11 @@
 	- fazer o passo 7 para testar a conexao
 10. Para validar o Vagrantfile use: vagrant validate
 11. Para executar o ansible deve: ansible-playbook -i hosts playbook.yml
+12. Para validar o status em nivel global no vagrant: vagrant global-status 
+13. Para ver status global de apenas maquinas validas: vagrant global-status --prune
+14. Para visualizar o box baixados: vagrant box list
+15. Para mostrar os box validos e antigos: vagrnat box list prune
+16. Para remover um box: vagrant box remove nome_do_box
 
 ## Observacoes:
 
