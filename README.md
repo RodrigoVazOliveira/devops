@@ -17,8 +17,7 @@
 	- cat sua_chave_publica >> ~/.ssh/authorized_keys
 	- fazer o passo 7 para testar a conexao
 10. Para validar o Vagrantfile use: vagrant validate
-11. Para executar o ansible deve: ansible-playbook -i hosts playbook.yml11. Para executar o ansible deve: ansible-playbook -i hosts playbook.yml11. Para executar o ansible deve: ansible-playbook -i hosts playbook.yml11. Para executar o ansible deve: ansible-playbook -i hosts playbook.yml11. Para executar o ansible deve: ansible-playbook -i hosts playbook.yml11. Para executar o ansible deve: ansible-playbook -i hosts playbook.yml11. Para executar o ansible deve: ansible-playbook -i hosts playbook.yml11. Para executar o ansible deve: ansible-playbook -i hosts playbook.yml11. Para executar o ansible deve: ansible-playbook -i hosts playbook.yml11. Para executar o ansible deve: ansible-playbook -i hosts playbook.yml11. Para executar o ansible deve: ansible-playbook -i hosts playbook.yml
-
+11. Para executar o ansible deve: ansible-playbook -i hosts playbook.yml
 
 ## Observacoes:
 
