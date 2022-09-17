@@ -38,7 +38,16 @@
 10. xcopy - copiar um diretorio e seus subdiretorio (flag /E)
 11. SETX - modificar uma variavel de ambiente permanentimente, deve-se usar o prompt de commando como modo administrador
 12. set - modificar variavel de ambiente apenas para aquela sessao do terminal
-
+13. mkdir - criar um diretorio
+14. rmdir - remover um diretorio
+15. del - apagar um arquivo
+16. tree - mostrar uma arvore dos diretorio atual e seus subdiretorios
+17. rename - renomea um arquivo ou pasta
+18. systeminfo - exibe informacoes do sistema
+19. ver - mostra versao do windows
+20. title - mudar o titulo do prompt do comando
+21. more - visualiza um texto em paginacao
+22. exit - sair do terminal/cmd
 
 ## Observacoes:
 
