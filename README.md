@@ -24,7 +24,27 @@
 15. Para mostrar os box validos e antigos: vagrnat box list prune
 16. Para remover um box: vagrant box remove nome_do_box
 
+## Script Batch - Windows
+
+1. cd - mudar de diretorio
+2. para setar variaveis de ambiente e: set NOME_DA_VARIAVE=VALOR
+3. type - imprimir um arquivo texto
+4. move - mover um arquivo para outro diretorio
+5. copy - copiar arquivos
+6. pause - aguarda uma acao do usuario para continuar, para parar deve usar CTRL+C ou fechar o terminal
+7. . - diretorio atual
+8. .. - diretorio acima do diretorio atual
+9. help - comando para listar todas opcoes de um determinado comando - exemplo. help cd 
+10. xcopy - copiar um diretorio e seus subdiretorio (flag /E)
+11. SETX - modificar uma variavel de ambiente permanentimente, deve-se usar o prompt de commando como modo administrador
+12. set - modificar variavel de ambiente apenas para aquela sessao do terminal
+
+
 ## Observacoes:
 
 1. O puppet e necessario instalar na maquina virtual para usar os scripts.
 2. O Ansible e necessario ser instalado apenas na sua maquina
+
+
+
+
