@@ -36,7 +36,7 @@
 8. .. - diretorio acima do diretorio atual
 9. help - comando para listar todas opcoes de um determinado comando - exemplo. help cd 
 10. xcopy - copiar um diretorio e seus subdiretorio (flag /E)
-11. SETX - modificar uma variavel de ambiente permanentimente, deve-se usar o prompt de commando como modo administrador
+11. SETX - modificar uma variavel de ambiente permanentimente, deve-se usar o prompt de commando como modo administrador (use a flag /M)
 12. set - modificar variavel de ambiente apenas para aquela sessao do terminal
 13. mkdir - criar um diretorio
 14. rmdir - remover um diretorio
