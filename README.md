@@ -53,7 +53,7 @@
 
 1. O puppet e necessario instalar na maquina virtual para usar os scripts.
 2. O Ansible e necessario ser instalado apenas na sua maquina
-
+3. Utilizar coringas como: entre [1-9], ou [1,8] junto com comando ls. $ ls arq[1-9] 
 
 
 
