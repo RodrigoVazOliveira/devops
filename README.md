@@ -48,12 +48,17 @@
 20. title - mudar o titulo do prompt do comando
 21. more - visualiza um texto em paginacao
 22. exit - sair do terminal/cmd
+23. Utilizar coringas como: entre [1-9], ou [1,8] junto com comando ls. $ ls arq[1-9] 
+24. Usando grep, busca dentro de arquivos: grep palavra_que_deseja_procurar (nome do arquivo ou coringas ou local)
+25. head - exibe as 10 primeiras linhas de um arquivo. Exemplo: head nome_do_arquivo
+26. tail - exibe as 10 ultimas linhas de um arquivo. Exemplo: tail nome_do_arquivo
+
 
 ## Observacoes:
 
 1. O puppet e necessario instalar na maquina virtual para usar os scripts.
 2. O Ansible e necessario ser instalado apenas na sua maquina
-3. Utilizar coringas como: entre [1-9], ou [1,8] junto com comando ls. $ ls arq[1-9] 
+
 
 
 
