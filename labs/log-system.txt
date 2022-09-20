@@ -1,0 +1,4 @@
+Sep 19 17:39:02 colombo systemd[1]: Finished Clean php session files.
+Sep 19 17:47:28 colombo systemd[1]: Starting Daily man-db regeneration...
+Sep 19 17:47:29 colombo systemd[1]: man-db.service: Deactivated successfully.
+Sep 19 17:47:29 colombo systemd[1]: Finished Daily man-db regeneration.

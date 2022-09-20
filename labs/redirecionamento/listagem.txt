@@ -1,0 +1,7 @@
+ssh		22/tcp				# SSH Remote Login Protocol
+# Updated from https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml .
+http		80/tcp		www		# WorldWideWeb HTTP
+https		443/tcp				# http protocol over TLS/SSL
+https		443/udp				# HTTP/3
+http-alt	8080/tcp	webcache	# WWW caching service
+thomas:x:1000:1000:Thomas Colombo,,,:/home/thomas:/bin/bash
