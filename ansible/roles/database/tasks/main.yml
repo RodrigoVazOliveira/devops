@@ -33,8 +33,6 @@
     host: "{{ item }}"
     state: present
   with_items:
-      - 'localhost'
-      - '127.0.0.1'
       - "{{ wp_host_address }}"
 - name: 'Configurar o acesso remoto para o MariaDB'
   copy:
