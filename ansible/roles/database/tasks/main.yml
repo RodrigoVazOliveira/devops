@@ -1,0 +1,45 @@
+---
+- name: 'instalando as dependencias do sistema'
+  apt:
+    update_cache: yes
+    name:
+      - mariadb-server
+      - mariadb-client
+      - python3-mysqldb
+    state: latest
+  become: yes
+- name: 'Adicionar senha root'
+  mysql_user:
+    login_user: root
+    login_password: root
+    user: root
+    check_implicit_admin: true
+    password: root
+    host: localhost
+  become: yes
+- name: 'Criar o banco de dados no MySQL'
+  mysql_db:
+    name: "{{ wp_db_name }}"
+    login_user: root
+    login_password: root
+    state: present
+- name: 'Criar usuario no MySQL para WordPress'
+  mysql_user:
+    login_user: root
+    login_password: root
+    name: "{{ wp_username }}"
+    password: "{{ wp_password }}"
+    priv: '{{ wp_db_name }}.*:ALL'
+    host: "{{ item }}"
+    state: present
+  with_items:
+      - 'localhost'
+      - '127.0.0.1'
+      - "{{ wp_host_address }}"
+- name: 'Configurar o acesso remoto para o MariaDB'
+  copy:
+    src: 'files/50-server.cnf'
+    dest: '/etc/mysql/mariadb.conf.d/50-server.cnf'
+  become: yes
+  notify:
+    - restart mariadb
