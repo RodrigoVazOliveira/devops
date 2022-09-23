@@ -1,0 +1,11 @@
+- name: 'instalando as dependencias do sistema'
+  apt:
+    update_cache: yes
+    name:
+      - php7.4
+      - apache2
+      - libapache2-mod-php7.4
+      - php7.4-gd
+      - php7.4-mysql
+    state: latest
+  become: yes
