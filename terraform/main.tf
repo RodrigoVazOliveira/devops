@@ -13,6 +13,27 @@ resource "aws_instance" "dev" {
     vpc_security_group_ids = ["${aws_security_group.acesso_ssh.id}"]
 }
 
+resource "aws_instance" "dev4" {
+    ami = "ami-08c40ec9ead489470" # AMD64
+    instance_type = "t2.micro"
+    key_name = "aws"
+    tags = { 
+        Name = "dev4"
+    }
+    vpc_security_group_ids = ["${aws_security_group.acesso_ssh.id}"]
+    depends_on = [aws_s3_bucket.dev-4]
+}
+
+resource "aws_instance" "dev5" {
+    ami = "ami-08c40ec9ead489470" # AMD64
+    instance_type = "t2.micro"
+    key_name = "aws"
+    tags = { 
+        Name = "dev5"
+    }
+    vpc_security_group_ids = ["${aws_security_group.acesso_ssh.id}"]
+}
+
 resource "aws_security_group" "acesso_ssh" {
   name        = "allow_tls"
   description = "Allow TLS inbound traffic"
@@ -29,3 +50,14 @@ resource "aws_security_group" "acesso_ssh" {
     Name = "ssh"
   }
 }
+
+# S3
+resource "aws_s3_bucket" "dev-4" {
+  bucket = "rodrigovaz-dev-alura"
+  acl    = "private"
+
+  tags = {
+    Name = "rmerceslabs-dev4"
+  }
+}
+
