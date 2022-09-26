@@ -10,4 +10,22 @@ resource "aws_instance" "dev" {
     tags = { 
         Name = "dev${count.index}"
     }
+    vpc_security_group_ids = ["${aws_security_group.acesso_ssh.id}"]
+}
+
+resource "aws_security_group" "acesso_ssh" {
+  name        = "allow_tls"
+  description = "Allow TLS inbound traffic"
+
+  ingress {
+    description      = "Acesso ao SSH"
+    from_port        = 22
+    to_port          = 22
+    protocol         = "tcp"
+    cidr_blocks      = ["186.210.226.35/32"]
+  }
+
+  tags = {
+    Name = "ssh"
+  }
 }
