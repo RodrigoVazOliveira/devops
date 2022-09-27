@@ -1,8 +1,8 @@
 resource "aws_instance" "dev" {
     count = 3
-    ami = "ami-08c40ec9ead489470" # AMD64
+    ami = var.amis["us-east-1"]
     instance_type = "t2.micro"
-    key_name = "aws"
+    key_name = var.key_ssh_file
     tags = { 
         Name = "dev${count.index}"
     }
@@ -10,9 +10,9 @@ resource "aws_instance" "dev" {
 }
 
 resource "aws_instance" "dev4" {
-    ami = "ami-08c40ec9ead489470" # AMD64
+    ami = var.amis["us-east-1"]
     instance_type = "t2.micro"
-    key_name = "aws"
+    key_name = var.key_ssh_file
     tags = { 
         Name = "dev4"
     }
@@ -21,9 +21,9 @@ resource "aws_instance" "dev4" {
 }
 
 resource "aws_instance" "dev5" {
-    ami = "ami-08c40ec9ead489470" # AMD64
+    ami = var.amis["us-east-1"]
     instance_type = "t2.micro"
-    key_name = "aws"
+    key_name = var.key_ssh_file
     tags = { 
         Name = "dev5"
     }
@@ -32,9 +32,9 @@ resource "aws_instance" "dev5" {
 
 resource "aws_instance" "dev6" {
     provider = aws.us-east-2
-    ami = "ami-097a2df4ac947655f"
+    ami = var.amis["us-east-2"]
     instance_type = "t2.micro"
-    key_name = "aws"
+    key_name = var.key_ssh_file
     tags = { 
         Name = "dev5"
     }
