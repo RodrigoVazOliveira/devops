@@ -1,0 +1,15 @@
+{
+  "name": "testdocker",
+  "version": "1.0.0",
+  "description": "TEste para subir aplicacao em docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Rodrigo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
